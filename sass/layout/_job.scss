@@ -1,0 +1,45 @@
+@use '../utility/variable';
+.job {
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+    @media screen and (min-width:1200px) {
+        padding-bottom: 94px;
+    }
+}
+
+.job__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.job__list--item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.job__image--textContainer {
+    position: relative;
+}
+
+.job__image--textBox {
+    position: absolute;
+    bottom: 0%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.job__image--text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: variable.$title-second-color;
+}

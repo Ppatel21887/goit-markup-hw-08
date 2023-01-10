@@ -1,0 +1,97 @@
+@use '../utility/variable';
+.customer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+@media screen and (max-width:480px){
+    .customer{
+        padding-bottom: 60px;
+    }
+}
+.customer__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.customer__list--item {
+    width: 170px;
+    height: 92px;
+    box-sizing: border-box;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+&:not(:last-child) {
+    margin-right: 30px;
+}
+}
+
+@media (min-width:320px) and (max-width:479px) {
+    
+    .customer__list--item {
+        margin-bottom: 30px;
+        width: 130px;
+    }
+    .customer__list--item:not(:nth-child(-n+2)){
+        margin-right: 30px;
+    }
+    .customer-logo{
+        width: 127px;
+        margin: 16px 0px;
+    }
+}
+
+@media (min-width:480px) and (max-width:767px){
+    .customer__list--item{
+        margin-bottom: 30px;
+        width: 210px;
+    }
+    .customer__list--item:not(:nth-child(-n+2)) {
+        margin-right: 30px;
+    }
+    .customer-logo {
+        width: 106px;
+        margin: 16px 52px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+    .customer__list--item {
+        margin-bottom: 30px;
+        width: 226px;
+    }
+
+    .customer__list--item:not(:nth-child(-n+3)) {
+        margin-right: 30px;
+    }
+
+    .customer-logo {
+        width: 106px;
+        margin: 16px 60px;
+    }
+}
+@media (min-width:1200px){
+    .customer-logo{
+        width:106px;
+        margin: 16px 32px;
+    }
+}
+
+.customer__list--itemLink {
+    color: variable.$logo-color;
+    background-color: #afb1b8;
+}
+
+.customer-logo {
+    fill: #afb1b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+&:hover,
+&:focus {
+    fill: currentColor;
+}}
+
+
