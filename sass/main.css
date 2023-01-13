@@ -1173,6 +1173,9 @@ button:focus {
     display: flex;
     flex-direction: column;
   }
+  .footer__button {
+    margin-right: 10px;
+  }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .footer__form {
@@ -1213,12 +1216,13 @@ button:focus {
     margin-top: 20px;
   }
 }
-.footer__button--icon {
+.footer__button--div {
   background-color: #2196f3;
   fill: #ffffff;
   padding-left: 30px;
+  padding-top: 10px;
 }
-.footer__button--icon:hover, .footer__button--icon:focus {
+.footer__button--div:hover, .footer__button--div:focus {
   fill: #ff6347;
 }
 

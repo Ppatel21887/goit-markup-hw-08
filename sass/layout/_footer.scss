@@ -12,12 +12,6 @@
     display: flex;
 }
 
-// @media screen and (max-width:480px){
-//     .footer{
-//         margin-left: 15px;
-//     }
-// }
-
 .footer__section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -267,6 +261,10 @@ width:200px;
         display: flex;
         flex-direction: column;
     }
+
+    .footer__button{
+        margin-right: 10px;
+    }
 }
 @media (min-width: 480px) and (max-width: 767px){
     .footer__form {
@@ -281,23 +279,6 @@ width:200px;
 .footer__label {
     padding-right: 12px;
 }
-// @media (min-width: 320px) and (max-width: 479px) {
-//     .footer__label {
-//         margin-bottom: 20px;
-//     }
-// }
-
-// @media (min-width: 480px) and (max-width: 767px) {
-//     .footer__label {
-//     margin-bottom: 20px;
-//     }
-// }
-
-// @media (min-width: 768px) and (max-width: 1199px) {
-//     .footer__label {
-//     margin-bottom: 20px;
-//     }
-// }
 
 .footer__button:enabled {
     color: variable.$title-second-color;
@@ -315,6 +296,7 @@ width:200px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
+
 &:hover,
 &:focus {
     color: variable.$border-color;
@@ -326,12 +308,14 @@ margin-top: 20px;
     }
 }
 
-.footer__button--icon {
+.footer__button--div {
     background-color: variable.$logo-color;
     fill: #ffffff;
     padding-left: 30px;
+    padding-top: 10px;
 
 &:hover,
 &:focus {
     fill:variable.$border-color;
-}}
+}
+}
