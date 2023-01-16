@@ -127,7 +127,7 @@ button:focus {
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding-right: 15px;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -281,7 +281,7 @@ button:focus {
     justify-content: flex-end;
   }
 }
-.header__container {
+.header__bar {
   display: flex;
   align-items: center;
 }
@@ -397,6 +397,10 @@ button:focus {
   transform: scaleX(1);
 }
 
+.header__menu--toggle {
+  margin-left: auto;
+}
+
 /*styling for icons*/
 .header__contact--iconMail {
   margin-right: 10px;
@@ -422,9 +426,6 @@ button:focus {
   }
   .header__contacts {
     display: none;
-  }
-  .header__container {
-    margin-left: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -855,6 +856,11 @@ button:focus {
 }
 .customer__list--item:not(:last-child) {
   margin-right: 30px;
+}
+
+.customer__list--item:hover,
+.customer__list--item:focus {
+  border: 1px solid #2196f3;
 }
 
 @media (min-width: 320px) and (max-width: 479px) {

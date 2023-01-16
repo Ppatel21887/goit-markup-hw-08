@@ -27,6 +27,11 @@
 }
 }
 
+.customer__list--item:hover,
+.customer__list--item:focus{
+    border:1px solid #2196f3;
+}
+
 @media (min-width:320px) and (max-width:479px) {
     
     .customer__list--item {  
@@ -92,6 +97,10 @@
     color: variable.$logo-color;
     background-color: #afb1b8;
 }
+// .customer__list--itemLink:hover,
+// .customer__list--itemLink:focus{
+//     color:#2196f3;
+// }
 
 .customer-logo {
     fill: #afb1b8;
@@ -101,7 +110,7 @@
 
 &:hover,
 &:focus {
-    fill: currentColor;
+    fill:currentColor;
 }}
 
 

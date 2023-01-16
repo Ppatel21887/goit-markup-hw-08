@@ -79,7 +79,7 @@ button:focus {
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
+.header__bar {
   display: flex;
   align-items: center;
 }

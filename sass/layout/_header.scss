@@ -6,13 +6,13 @@
 }
 @media screen and (max-width:768px) {
     .header{
-        min-height: 60px;
+      min-height: 60px;
       display: flex;
       align-items: center;
       justify-content: flex-end;
     }
 }
-.header__container {
+.header__bar {
     display: flex;
     align-items: center;
 }
@@ -136,6 +136,10 @@
     }
 }
 
+.header__menu--toggle{
+    margin-left: auto;
+}
+
 /*styling for icons*/
 
 .header__contact--iconMail {
@@ -147,7 +151,6 @@
     margin-right: 10px;
     fill: currentColor;
 }
-
 
 @media screen and (max-width:480px) {
     .header__navigation {
@@ -167,9 +170,7 @@
     .header__contacts {
         display: none;
     }
-   .header__container{
-    margin-left: 15px;
-   }
+
 }
 @media (min-width:768px) and (max-width:1199px) {
 
