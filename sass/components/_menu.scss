@@ -47,6 +47,9 @@ transform: translateX(0);
     .menu-toggle {
         display: none;
     }
+    .header__menu--toggle{
+        display: none;
+    }
 }
 .menu-toggle:hover,
 .menu-toggle:focus{
